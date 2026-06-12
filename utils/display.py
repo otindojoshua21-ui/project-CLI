@@ -7,7 +7,6 @@ try:
 except ImportError:
     RICH = False
 
-
 def print_users(users):
     """Print all users in a table."""
     if not users:
@@ -23,7 +22,6 @@ def print_users(users):
     else:
         for u in users:
             print(u)
-
 
 def print_projects(projects, user_name=""):
     """Print projects in a table."""
@@ -41,7 +39,6 @@ def print_projects(projects, user_name=""):
         for p in projects:
             print(p)
 
-
 def print_tasks(tasks, project_name=""):
     """Print tasks in a table."""
     if not tasks:
@@ -57,7 +54,6 @@ def print_tasks(tasks, project_name=""):
     else:
         for task in tasks:
             print(task)
-
 
 def _out(msg):
     if RICH:

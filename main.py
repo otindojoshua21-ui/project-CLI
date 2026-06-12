@@ -53,7 +53,7 @@ def cmd_list_projects(args):
 
 def cmd_add_task(args):
     users = get_users()
-    # Search project across all users
+
     for user in users:
         proj = user.get_project(args.project)
         if proj:
@@ -67,7 +67,6 @@ def cmd_add_task(args):
             return
     print(f"Project '{args.project}' not found.")
 
-
 def cmd_list_tasks(args):
     users = get_users()
     for user in users:
@@ -76,7 +75,6 @@ def cmd_list_tasks(args):
             print_tasks(proj.tasks, proj.title)
             return
     print(f"Project '{args.project}' not found.")
-
 
 def cmd_complete_task(args):
     users = get_users()

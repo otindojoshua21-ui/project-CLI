@@ -4,7 +4,6 @@ from models.user import User
 
 DATA_FILE = os.path.join(os.path.dirname(__file__), "..", "data", "data.json")
 
-
 def ensure_data_dir():
     """Create data directory if it doesn't exist."""
     os.makedirs(os.path.dirname(DATA_FILE), exist_ok=True)
@@ -16,7 +15,6 @@ def save_data(users: list[User]):
 
     with open(DATA_FILE, "w") as f:
         json.dump([u.to_dict() for u in users], f, indent=2)
-
 
 def load_data():
     """Load users from JSON file."""

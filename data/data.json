@@ -1,0 +1,35 @@
+[
+  {
+    "id": 1,
+    "name": "Alice",
+    "email": "alice@gmail.com",
+    "projects": [
+      {
+        "id": 1,
+        "title": "CLI Tool",
+        "description": "Build CLI app",
+        "due_date": "2024-12-31",
+        "tasks": [
+          {
+            "id": 1,
+            "title": "Implement add-task",
+            "assigned_to": "Alice",
+            "status": "pending"
+          },
+          {
+            "id": 1,
+            "title": "Setup database",
+            "assigned_to": "Bob",
+            "status": "pending"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "name": "Bob",
+    "email": "bob@gmail.com",
+    "projects": []
+  }
+]
